@@ -1,0 +1,32 @@
+.gallery {
+  padding-top: 0;
+  background-color: var(--background-text-color);
+}
+
+.gallery__list {
+  display: flex;
+}
+
+.gallery__item {
+  width: calc((100% - 60px) / 3);
+  position: relative;
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.gallery__bottom-text {
+  width: 370px;
+  height: 70px;
+  bottom: 0;
+  left: 0;
+  color: var(--background-text-color);
+  line-height: calc(16 / 14);
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: rgba(53, 56, 95, 0.8);
+  padding-top: 27px;
+  padding-bottom: 27px;
+  position: absolute;
+}

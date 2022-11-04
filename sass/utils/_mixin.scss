@@ -1,0 +1,8 @@
+@mixin btn($fw, $fs, $lh, $ls, $br, $h) {
+  font-weight: $fw;
+  font-size: $fs;
+  line-height: $lh;
+  letter-spacing: $ls;
+  border-radius: $br;
+  height: $h;
+}

@@ -1,0 +1,7 @@
+.btn {
+  @include btn(700, 16px, calc(30 / 16), 0.06em, 4px, 50px);
+  color: var(--background-text-color);
+  background: var(--accent-color);
+  border: none;
+  cursor: pointer;
+}

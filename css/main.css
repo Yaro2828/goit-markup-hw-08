@@ -497,7 +497,11 @@ body {
   gap: 30px;
 }
 
-.values__item .values__img {
+.values__item {
+  width: 100%;
+}
+
+.values__img {
   width: 270px;
   height: 120px;
   background: #f5f4fa;

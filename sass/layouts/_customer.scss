@@ -2,16 +2,6 @@
   background-color: var(--background-text-color);
 }
 
-.customer-title {
-  font-size: 28px;
-  line-height: calc(42 / 36);
-  text-align: center;
-  color: var(--primary-text-color);
-  margin-bottom: 50px;
-  @include desktop {font-size: 36px;
-  }
-}
-
 .customer-list {
   display: flex;
   gap: 30px;

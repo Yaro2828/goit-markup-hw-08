@@ -4,11 +4,11 @@
 
 .values__list {
   display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 
-.values__item:not(:last-child) {
-  margin-right: 30px;
-}
+.values__item
 
 .values__img {
   width: 270px;

@@ -1,5 +1,10 @@
 .footer-social {
-  margin-right: 93px;
+  margin-bottom: 60px;
+   @include tablet {margin-bottom: 0 ;
+  }
+ 
+  @include desktop { margin-right: 93px; 
+  }
 }
 
 .footer-social-text {
@@ -10,12 +15,12 @@
   text-transform: uppercase;
   color: var(--background-text-color);
   margin-bottom: 20px;
-  color: var(--background-text-color);
 }
 
 .footer-social-list {
   display: flex;
   gap: 10px;
+justify-content: center;
 }
 
 .footer-social-link {

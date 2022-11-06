@@ -4,13 +4,22 @@
 }
 
 .footer-wrap {
-  display: flex;
-  align-items: baseline;
-  justify-content: space-around;
+   @include tablet { justify-content: space-around;
+  flex-wrap: wrap;
+display: flex;
+  align-items: baseline;  
+  }
+  @media (max-width: 1199px) {
+  text-align: center;
+  }
 }
 
 .footer-contacts-box {
+  margin-bottom: 60px;
+  @include desktop { 
   margin-right: 70px;
+  margin-bottom: 0;
+  }
 }
 
 .footer-logo {

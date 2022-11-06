@@ -84,9 +84,15 @@ body {
   font-family: "Raleway";
   font-style: normal;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.1923076923;
+  font-size: 24px;
+  line-height: 1.1666666667;
   display: inline-block;
+}
+@media screen and (min-width: 1200px) {
+  .logo {
+    font-size: 26px;
+    line-height: 1.1923076923;
+  }
 }
 
 .section {
@@ -769,19 +775,34 @@ body {
   padding: 60px 0;
 }
 
-.footer-wrap {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+@media screen and (min-width: 768px) {
+  .footer-wrap {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
+}
+@media (max-width: 1199px) {
+  .footer-wrap {
+    text-align: center;
+  }
 }
 
 .footer-contacts-box {
-  margin-right: 70px;
+  margin-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .footer-contacts-box {
+    margin-right: 70px;
+    margin-bottom: 0;
+  }
 }
 
 .footer-logo {
@@ -817,7 +838,17 @@ body {
 }
 
 .footer-social {
-  margin-right: 93px;
+  margin-bottom: 60px;
+}
+@media screen and (min-width: 768px) {
+  .footer-social {
+    margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-social {
+    margin-right: 93px;
+  }
 }
 
 .footer-social-text {
@@ -828,7 +859,6 @@ body {
   text-transform: uppercase;
   color: var(--background-text-color);
   margin-bottom: 20px;
-  color: var(--background-text-color);
 }
 
 .footer-social-list {
@@ -836,6 +866,9 @@ body {
   display: -ms-flexbox;
   display: flex;
   gap: 10px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .footer-social-link {
@@ -877,7 +910,7 @@ body {
 .footer-input {
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
-  min-width: 358px;
+  min-width: 100%;
   height: 50px;
   color: rgba(255, 255, 255, 0.6);
   background-color: #2f303a;
@@ -891,6 +924,11 @@ body {
   outline: transparent;
   padding: 15px 16px;
 }
+@media screen and (min-width: 1200px) {
+  .footer-input {
+    min-width: 358px;
+  }
+}
 
 .footer-input-button {
   -webkit-box-align: center;
@@ -898,7 +936,6 @@ body {
           align-items: center;
   text-align: center;
   min-width: 200px;
-  margin-left: 12px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -906,6 +943,13 @@ body {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
+  margin-top: 20px;
+}
+@media screen and (min-width: 1200px) {
+  .footer-input-button {
+    margin-left: 12px;
+    margin-top: 0;
+  }
 }
 
 .portfolio-navigation-list {

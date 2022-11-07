@@ -3,16 +3,16 @@
   background-color: var(--hero-footer-color);
   padding: 118px 0;
   text-align: center;
-  max-width: 480px;
-  height: 400px;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url(../images/hero.jpg);
+  width: 100%;
+  background-image: var(--gradient), url(../images/img-mob/hero-mob.jpg);
+  @include retina { background-image: var(--gradient), url(../images/img-mob/hero-mob2x.jpg); }
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   margin: 0 auto;
    @include tablet { max-width: 768px;
   height: 400px;  
+
   }
    @include desktop {padding: 200px 0; 
   max-width: 1600px;

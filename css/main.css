@@ -35,7 +35,6 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
-  width: 100%;
 }
 
 body {
@@ -479,8 +478,12 @@ body {
 }
 @media screen and (min-width: 768px) {
   .hero {
-    max-width: 768px;
-    height: 400px;
+    background-image: var(--gradient), url(../images/img-tab/hero-tab.jpg);
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: var(--gradient), url(../images/img-tab/hero-tab2x.jpg);
   }
 }
 @media screen and (min-width: 1200px) {
@@ -488,6 +491,12 @@ body {
     padding: 200px 0;
     max-width: 1600px;
     height: 600px;
+    background-image: var(--gradient), url(../images/img-desk/hero.jpg);
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: var(--gradient), url(../images/img-desk/hero2x.jpg);
   }
 }
 
@@ -743,7 +752,6 @@ body {
 }
 
 .customer-link {
-  width: 100%;
   height: 92px;
   border: 1px solid var(--svg-primary-color);
   border-radius: 4px;

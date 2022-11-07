@@ -130,15 +130,33 @@
           <h2 class="section__title">Чим ми займаємося</h2>
           <ul class="gallery__list list">
             <li class="gallery__item">
-              <img src="./images/whatwedo1.jpg" alt="whatwedo1" width="370" height="295" />
+              <picture>
+                <source srcset="
+                ./images/img-desk/whatwedo1.jpg 1x,
+                ./images/img-desk/whatwedo1-2x.jpg 2x"  
+                media="(min-width: 1200px)">
+                <img src="./images/img-desk/whatwedo1.jpg" alt="whatwedo1" width="370"/>
+              </picture>
               <p class="gallery__bottom-text">Десктопні додатки</p>
             </li>
             <li class="gallery__item">
-              <img src="./images/whatwedo2.jpg" alt="whatwedo2" width="370" height="295" />
-              <p class="gallery__bottom-text">Мобільні додатки</p>
+                 <picture>
+                <source srcset="
+                ./images/img-desk/whatwedo2.jpg 1x,
+                ./images/img-desk/whatwedo2-2x.jpg 2x"  
+                media="(min-width: 1200px)">
+              <img src="./images/img-desk/whatwedo2.jpg" alt="whatwedo2" width="370"/>
+              </picture>
+        <p class="gallery__bottom-text">Мобільні додатки</p>
             </li>
             <li class="gallery__item">
-              <img src="./images/whatwedo3.jpg" alt="whatwedo3" width="370" height="295" />
+              <picture>
+                <source srcset="
+                ./images/img-desk/whatwedo3.jpg 1x,
+                ./images/img-desk/whatwedo3-2x.jpg 2x"  
+                media="(min-width: 1200px)">
+              <img src="./images/img-desk/whatwedo3.jpg" alt="whatwedo3" width="370"/>
+              </picture>
               <p class="gallery__bottom-text">Дизайнерські рішення</p>
             </li>
           </ul>
@@ -152,13 +170,19 @@
           <ul class="team-list list">
             <li class="team-item">
               <picture>
-                <source>
-                <source >
+                <source srcset="
+                ./images/img-desk/team1desk.jpg 1x,
+                ./images/img-desk/team1desk2x.jpg 2x"  
+                media="(min-width: 1200px)">
+                <source srcset="
+                ./images/img-tab/team1tab.jpg 1x,
+                ./images/img-tab/team1tab2x.jpg 2x"  
+                media="(min-width: 768px)" >
                 <source srcset="
                 ./images/img-mob/team1mob.jpg 1x,
                 ./images/img-mob/team1mob2x.jpg 2x"  
                 media="(max-width: 767px)">
-                <img  src="./images/team1.jpg" alt="team-member1" width="450" />
+                <img  src="./images/img-desk/team1desk.jpg" alt="team-member1" width="450" />
               </picture>
               <div class="team-section">
                 <h3 class="team-title-name">Ігор Дем'яненко</h3>
@@ -197,13 +221,19 @@
             </li>
             <li class="team-item">
               <picture>
-                <source>
-                <source >
+                <source srcset="
+                ./images/img-desk/team2desk.jpg 1x,
+                ./images/img-desk/team2desk2x.jpg 2x"  
+                media="(min-width: 1200px)">
+                <source srcset="
+                ./images/img-tab/team2tab.jpg 1x,
+                ./images/img-tab/team2tab2x.jpg 2x"  
+                media="(min-width: 768px)" >
                 <source srcset="
                 ./images/img-mob/team2mob.jpg 1x,
                 ./images/img-mob/team2mob2x.jpg 2x"  
                 media="(max-width: 767px)">
-                <img  src="./images/team2.jpg" alt="team-member2" width="450" />
+                <img  src="./images/img-desk/team2desk.jpg" alt="team-member2" width="450" />
               </picture>
               <div class="team-section">
                 <h3 class="team-title-name">Ольга Рєпіна</h3>
@@ -242,13 +272,19 @@
             </li>
             <li class="team-item">
               <picture>
-                <source>
-                <source >
+                <source srcset="
+                ./images/img-desk/team3desk.jpg 1x,
+                ./images/img-desk/team3desk2x.jpg 2x"  
+                media="(min-width: 1200px)">
+                <source srcset="
+                ./images/img-tab/team3tab.jpg 1x,
+                ./images/img-tab/team3tab2x.jpg 2x"  
+                media="(min-width: 768px)" >
                 <source srcset="
                 ./images/img-mob/team3mob.jpg 1x,
                 ./images/img-mob/team3mob2x.jpg 2x"  
                 media="(max-width: 767px)">
-                <img  src="./images/team3.jpg" alt="team-member3" width="450" />
+                <img  src="./images/img-desk/team3desk.jpg" alt="team-member3" width="450" />
               </picture>
               <div class="team-section">
                 <h3 class="team-title-name">Микола Тарасов</h3>
@@ -287,13 +323,19 @@
             </li>
             <li class="team-item">
               <picture>
-                <source>
-                <source >
+                <source srcset="
+                ./images/img-desk/team4desk.jpg 1x,
+                ./images/img-desk/team4desk2x.jpg 2x"  
+                media="(min-width: 1200px)">
+                <source srcset="
+                ./images/img-tab/team4tab.jpg 1x,
+                ./images/img-tab/team4tab2x.jpg 2x"  
+                media="(min-width: 768px)" >
                 <source srcset="
                 ./images/img-mob/team4mob.jpg 1x,
                 ./images/img-mob/team4mob2x.jpg 2x"  
                 media="(max-width: 767px)">
-                <img  src="./images/team4.jpg" alt="team-member4" width="450" />
+                <img  src="./images/img-desk/team4desk.jpg" alt="team-member4" width="450" />
               </picture>
               <div class="team-section">
                 <h3 class="team-title-name">Михайло Єрмаков</h3>

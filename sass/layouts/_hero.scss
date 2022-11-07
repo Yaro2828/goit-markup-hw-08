@@ -10,13 +10,19 @@
   background-position: center;
   background-repeat: no-repeat;
   margin: 0 auto;
-   @include tablet { max-width: 768px;
-  height: 400px;  
 
+   @include tablet { 
+ background-image: var(--gradient), url(../images/img-tab/hero-tab.jpg);
+ @include retina { background-image: var(--gradient), url(../images/img-tab/hero-tab2x.jpg); }
   }
-   @include desktop {padding: 200px 0; 
+
+
+   @include desktop {
+  padding: 200px 0; 
   max-width: 1600px;
   height: 600px;
+  background-image: var(--gradient), url(../images/img-desk/hero.jpg);
+ @include retina { background-image: var(--gradient), url(../images/img-desk/hero2x.jpg); }
   }
 }
 

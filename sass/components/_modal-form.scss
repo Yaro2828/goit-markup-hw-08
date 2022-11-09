@@ -101,16 +101,22 @@
 }
 
 .policy-text {
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.16;
   color: var(--secondary-text-color);
   margin-left: 8px;
+   @include desktop { font-size: 14px;
+  line-height: 1.71; 
+  }
 }
 
 .policy-link {
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.16;
   color: var(--accent-color);
+   @include desktop { font-size: 14px;
+  line-height: 1.71;
+  }
 }
 
 .modal-send-btn {

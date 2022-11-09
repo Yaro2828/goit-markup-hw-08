@@ -45,6 +45,10 @@ body {
   letter-spacing: 0.03em;
 }
 
+.no-scroll {
+  overflow: hidden;
+}
+
 .container {
   width: 100%;
   padding-left: 15px;
@@ -137,7 +141,7 @@ body {
 }
 
 .modal {
-  width: 528px;
+  width: 96%;
   min-height: 581px;
   background-color: var(--background-text-color);
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -145,10 +149,20 @@ body {
   border-radius: 4px;
   position: absolute;
   top: 50%;
-  left: 50%;
+  left: 49%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   padding: 40px;
+}
+@media screen and (min-width: 480px) {
+  .modal {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+  }
 }
 
 .modal-btn {
@@ -300,16 +314,28 @@ body {
 }
 
 .policy-text {
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.16;
   color: var(--secondary-text-color);
   margin-left: 8px;
 }
+@media screen and (min-width: 1200px) {
+  .policy-text {
+    font-size: 14px;
+    line-height: 1.71;
+  }
+}
 
 .policy-link {
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.16;
   color: var(--accent-color);
+}
+@media screen and (min-width: 1200px) {
+  .policy-link {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .modal-send-btn {
@@ -342,7 +368,12 @@ body {
 
 .header {
   border-bottom: 1px solid #ececec;
-  height: 80px;
+  height: 60px;
+}
+@media screen and (min-width: 768px) {
+  .header {
+    height: 80px;
+  }
 }
 
 .header__container,
@@ -369,6 +400,13 @@ body {
 
 .menu {
   display: none;
+}
+@media screen and (min-width: 768px) {
+  .menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 .menu__item:not(:last-child) {
@@ -427,6 +465,27 @@ body {
   display: none;
   gap: 50px;
 }
+@media screen and (min-width: 768px) {
+  .contacts__menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 10px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contacts__menu {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 50px;
+  }
+}
 
 .contacts__link {
   font-weight: 500;
@@ -439,13 +498,17 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-top: 32px;
-  padding-bottom: 32px;
   -webkit-transition: color var(--transition-duration) var(--transition-timing-function);
   transition: color var(--transition-duration) var(--transition-timing-function);
 }
 .contacts__link:hover, .contacts__link:focus {
   color: var(--accent-color);
+}
+@media screen and (min-width: 1200px) {
+  .contacts__link {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
 }
 
 .contacts__icon {
@@ -453,6 +516,26 @@ body {
   fill: currentColor;
 }
 .contacts__icon:hover, .contacts__icon:focus {
+  fill: var(--accent-color);
+}
+
+.mobile-open-btn {
+  background-color: transparent;
+  border: none;
+  display: block;
+  margin-left: auto;
+  cursor: pointer;
+  -webkit-transition: fill var(--transition-duration) var(--transition-timing-function);
+  transition: fill var(--transition-duration) var(--transition-timing-function);
+}
+@media screen and (min-width: 768px) {
+  .mobile-open-btn {
+    display: none;
+  }
+}
+
+.mobile-open-btn:hover,
+.mobile-open-btn:focus {
   fill: var(--accent-color);
 }
 
@@ -489,6 +572,13 @@ body {
   position: absolute;
   top: 10px;
   right: 15px;
+  -webkit-transition: fill var(--transition-duration) var(--transition-timing-function);
+  transition: fill var(--transition-duration) var(--transition-timing-function);
+}
+
+.mobile-close-btn:hover,
+.mobile-close-btn:focus {
+  fill: var(--accent-color);
 }
 
 .mob-menu__item:not(:last-child) {
@@ -502,6 +592,11 @@ body {
   font-weight: 500;
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
+}
+
+.mob-menu__link:hover,
+.mob-menu__link:focus {
+  color: var(--accent-color);
 }
 
 .active {

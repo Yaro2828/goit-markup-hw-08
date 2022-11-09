@@ -1154,6 +1154,14 @@ body {
   gap: 8px;
   margin-bottom: 40px;
 }
+@media screen and (min-width: 768px) {
+  .portfolio-navigation-list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 30px;
+  }
+}
 
 .portfolio-btn {
   font-family: "Roboto";
@@ -1189,9 +1197,18 @@ body {
           flex-direction: column;
   gap: 30px;
 }
+@media screen and (min-width: 768px) {
+  .portfolio-hero-list {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
 
 .portfolio-hero-item {
-  width: 100%;
   -webkit-transition: -webkit-box-shadow var(--transition-duration) var(--transition-timing-function);
   transition: -webkit-box-shadow var(--transition-duration) var(--transition-timing-function);
   transition: box-shadow var(--transition-duration) var(--transition-timing-function);
@@ -1203,6 +1220,11 @@ body {
 }
 .portfolio-hero-item:last-child {
   margin-right: 0;
+}
+@media screen and (min-width: 768px) {
+  .portfolio-hero-item {
+    width: calc((100% - 30px) / 2);
+  }
 }
 
 .portfolio-link {

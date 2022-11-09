@@ -3,6 +3,9 @@
  flex-wrap: wrap;
   gap: 8px;
   margin-bottom: 40px;
+   @include tablet { justify-content: center;
+    margin-bottom: 30px;
+  }
    // justify-content: center;
   // margin-bottom: 50px;
 }

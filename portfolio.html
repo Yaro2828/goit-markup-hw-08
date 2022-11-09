@@ -22,7 +22,7 @@
   </head>
   <body>
     <!-- Header -->
-    <header class="header">
+     <header class="header">
       <div class="container header__container">
         <nav class="navigation">
           <a class="logo header__logo link" href="./index.html"
@@ -33,7 +33,7 @@
               <a class="menu__link link" href="./index.html">Студія</a>
             </li>
             <li class="menu__item">
-              <a class="menu__link current link" href="./portfolio.html">Портфоліо</a>
+              <a class="menu__link  current link" href="./portfolio.html">Портфоліо</a>
             </li>
             <li class="menu__item">
               <a class="menu__link link" href="./index.html">Контакти</a>
@@ -59,6 +59,56 @@
               >
             </li>
           </ul>
+        </div>
+        <button type="button" class="mobile-open-btn" data-menu-open >
+          <svg class="menu-icon" width="40" height="40">
+                  <use href="./images/icons.svg#icon-menu-open"></use>
+                </svg>
+        </button>
+      </div>
+      <div class="mob-menu is-hidden" data-menu>
+        <div class="menu-container">
+          <div class="mob-menu-main">
+<button type="button" class="mobile-close-btn" data-menu-close>
+          <svg class="mob-menu__icon" width="40" height="40">
+                  <use href="./images/icons.svg#icon-close"></use>
+                </svg>
+        </button>
+        <nav>
+<ul class="mob-menu-list list">
+            <li class="mob-menu__item">
+              <a class="mob-menu__link link" href="./index.html">Студія</a>
+            </li>
+            <li class="mob-menu__item">
+              <a class="mob-menu__link  active link" href="./portfolio.html">Портфоліо</a>
+            </li>
+            <li class="mob-menu__item">
+              <a class="mob-menu__link link" href="./index.html">Контакти</a>
+            </li>
+          </ul>
+        </nav>
+           
+          </div>
+<div class="mobile-contacts">
+  <ul class="mobile-contacts__menu list">
+             <li class="mobile-contacts__item">
+              <a class="mobile-contacts__link link" href="tel:+380961111111">
+               +38 096 111 11 11</a
+              >
+            </li>
+            <li class="mobile-contacts__item">
+              <a class="mobile-contacts__link link" href="mailto:info@devstudio.com">
+                info@devstudio.com
+              </a>
+            </li>
+          </ul>
+<ul class="mobile-socials list">
+  <li class="mob-soc-item"><a href="" class="mob-soc-link">Instagram</a></li>
+  <li class="mob-soc-item"><a href="" class="mob-soc-link">Twitter</a></li>
+  <li class="mob-soc-item"><a href="" class="mob-soc-link">Facebook</a></li>
+  <li class="mob-soc-item"><a href="" class="mob-soc-link">TT</a></li>
+</ul>
+</div>
         </div>
       </div>
     </header>
@@ -90,7 +140,7 @@
             <li class="portfolio-hero-item">
               <a class="portfolio-link link" href="">
                 <div class="portfolio-overlay">
-                  <img src="./images/portfolio1.jpg" alt="Веб-сайт" width="370" height="295" />
+                  <img src="./images/img-desk/portfolio1.jpg" alt="Веб-сайт" width="370" height="295" />
                   <p class="portfolio-overlay-text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -106,7 +156,7 @@
             <li class="portfolio-hero-item">
               <a class="portfolio-link link" href="">
                 <div class="portfolio-overlay">
-                  <img src="./images/portfolio2.jpg" alt="постер" width="370" height="295" />
+                  <img src="./images/img-desk/portfolio2.jpg" alt="постер" width="370" height="295" />
                   <p class="portfolio-overlay-text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -123,7 +173,7 @@
               <a class="portfolio-link link" href="">
                 <div class="portfolio-overlay">
                   <img
-                    src="./images/portfolio3.jpg"
+                    src="./images/img-desk/portfolio3.jpg"
                     alt="логотип-ресторану"
                     width="370"
                     height="295"
@@ -143,7 +193,7 @@
             <li class="portfolio-hero-item">
               <a class="portfolio-link link" href="">
                 <div class="portfolio-overlay">
-                  <img src="./images/portfolio4.jpg" alt="навушники" width="370" height="295" />
+                  <img src="./images/img-desk/portfolio4.jpg" alt="навушники" width="370" height="295" />
                   <p class="portfolio-overlay-text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -159,7 +209,7 @@
             <li class="portfolio-hero-item">
               <a class="portfolio-link link" href="">
                 <div class="portfolio-overlay">
-                  <img src="./images/portfolio5.jpg" alt="коробки" width="370" height="295" />
+                  <img src="./images/img-desk/portfolio5.jpg" alt="коробки" width="370" height="295" />
                   <p class="portfolio-overlay-text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -175,7 +225,7 @@
             <li class="portfolio-hero-item">
               <a class="portfolio-link link" href="">
                 <div class="portfolio-overlay">
-                  <img src="./images/portfolio6.jpg" alt="монітор" width="370" height="295" />
+                  <img src="./images/img-desk/portfolio6.jpg" alt="монітор" width="370" height="295" />
                   <p class="portfolio-overlay-text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -191,7 +241,7 @@
             <li class="portfolio-hero-item">
               <a class="portfolio-link link" href="">
                 <div class="portfolio-overlay">
-                  <img src="./images/portfolio7.jpg" alt="книга" width="370" height="295" />
+                  <img src="./images/img-desk/portfolio7.jpg" alt="книга" width="370" height="295" />
                   <p class="portfolio-overlay-text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -207,7 +257,7 @@
             <li class="portfolio-hero-item">
               <a class="portfolio-link link" href="">
                 <div class="portfolio-overlay">
-                  <img src="./images/portfolio8.jpg" alt="бірка" width="370" height="295" />
+                  <img src="./images/img-desk/portfolio8.jpg" alt="бірка" width="370" height="295" />
                   <p class="portfolio-overlay-text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -223,7 +273,7 @@
             <li class="portfolio-hero-item">
               <a class="portfolio-link link" href="">
                 <div class="portfolio-overlay">
-                  <img src="./images/portfolio9.jpg" alt="ноутбук" width="370" height="295" />
+                  <img src="./images/img-desk/portfolio9.jpg" alt="ноутбук" width="370" height="295" />
                   <p class="portfolio-overlay-text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -313,5 +363,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

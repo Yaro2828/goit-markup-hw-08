@@ -1,11 +1,13 @@
 .portfolio-hero-list {
   display: flex;
-  flex-wrap: wrap;
+ flex-direction: column;
   gap: 30px;
+   // flex-wrap: wrap;
 }
 
 .portfolio-hero-item {
-  width: calc((100% - 60px) / 3);
+  width: 100%;
+  // width: calc((100% - 60px) / 3);
   transition: box-shadow var(--transition-duration) var(--transition-timing-function);
 &:hover,
 &:focus {

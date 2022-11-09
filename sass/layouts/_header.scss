@@ -102,8 +102,6 @@
   color: var(--secondary-text-color);
   display: flex;
   align-items: center;
-  // padding-top: 32px;
-  // padding-bottom: 32px;
   transition: color var(--transition-duration) var(--transition-timing-function);
   &:hover,
   &:focus {
@@ -112,7 +110,6 @@
     @include desktop { padding-top: 32px;
   padding-bottom: 32px; 
   }
-  
 }
 
 .contacts__icon {
@@ -131,15 +128,13 @@
     margin-left: auto;
     cursor: pointer;
     transition: fill var(--transition-duration) var(--transition-timing-function);
+    &:hover,
+&:focus {
+  fill: var(--accent-color);
+}
     @include tablet { display: none;
   }
 }
-
-.mobile-open-btn:hover,
-.mobile-open-btn:focus {
-  fill: var(--accent-color);
-}
-
 
 .mob-menu {
   position: fixed;
@@ -158,7 +153,7 @@
     justify-content: space-between
   }
 
-.mobile-close-btn {background-color: rgba(0,0,0,0);
+.mobile-close-btn {background-color: transparent;
     border: none;
     display: block;
     margin-left: auto;
@@ -167,19 +162,11 @@
     top: 10px;
     right: 15px;
     transition: fill var(--transition-duration) var(--transition-timing-function);
-      
+     &:hover,
+&:focus {
+  fill: var(--accent-color);} 
 }
 
-.mobile-close-btn:hover,
-.mobile-close-btn:focus {
-  fill: var(--accent-color);
-}
-
-
-.menu__icon {
-}
-.list {
-}
 .mob-menu__item:not(:last-child) {
   margin-bottom: 32px;
 }
@@ -190,25 +177,22 @@ font-size: 40px;
     text-align: center;
     font-weight: 500;
 letter-spacing: 0.02em;
-color: var(--primary-text-color);
-}
-
-.mob-menu__link:hover,
-.mob-menu__link:focus {
+color: var(--primary-text-color);&:hover,
+&:focus {
   color: var(--accent-color);
+}
 }
 
 .active {
   color: var(--accent-color);
 }
 
-.mobile-contacts {
-}
 .mobile-contacts__menu {
       margin-bottom: 64px;
 }
 
-.mobile-contacts__item:first-child {
+.mobile-contacts__item {
+&:first-child {
   font-weight: 500;
 font-size: 34px;
 line-height: calc(40/34);
@@ -216,13 +200,13 @@ letter-spacing: 0.02em;
 color: var(--accent-color);
 margin-bottom: 32px;
 }
-
-.mobile-contacts__item:last-child{
+&:last-child{
   font-weight: 500;
 font-size: 24px;
 line-height: calc(28/24);
 letter-spacing: 0.02em;
 color: var(--secondary-text-color);
+}
 }
 
 .mobile-contacts__link {

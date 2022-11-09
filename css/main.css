@@ -528,15 +528,13 @@ body {
   -webkit-transition: fill var(--transition-duration) var(--transition-timing-function);
   transition: fill var(--transition-duration) var(--transition-timing-function);
 }
+.mobile-open-btn:hover, .mobile-open-btn:focus {
+  fill: var(--accent-color);
+}
 @media screen and (min-width: 768px) {
   .mobile-open-btn {
     display: none;
   }
-}
-
-.mobile-open-btn:hover,
-.mobile-open-btn:focus {
-  fill: var(--accent-color);
 }
 
 .mob-menu {
@@ -564,7 +562,7 @@ body {
 }
 
 .mobile-close-btn {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: transparent;
   border: none;
   display: block;
   margin-left: auto;
@@ -575,9 +573,7 @@ body {
   -webkit-transition: fill var(--transition-duration) var(--transition-timing-function);
   transition: fill var(--transition-duration) var(--transition-timing-function);
 }
-
-.mobile-close-btn:hover,
-.mobile-close-btn:focus {
+.mobile-close-btn:hover, .mobile-close-btn:focus {
   fill: var(--accent-color);
 }
 
@@ -593,9 +589,7 @@ body {
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
 }
-
-.mob-menu__link:hover,
-.mob-menu__link:focus {
+.mob-menu__link:hover, .mob-menu__link:focus {
   color: var(--accent-color);
 }
 
@@ -615,7 +609,6 @@ body {
   color: var(--accent-color);
   margin-bottom: 32px;
 }
-
 .mobile-contacts__item:last-child {
   font-weight: 500;
   font-size: 24px;
@@ -1156,11 +1149,10 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   gap: 8px;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 }
 
 .portfolio-btn {
@@ -1191,13 +1183,15 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   gap: 30px;
 }
 
 .portfolio-hero-item {
-  width: calc((100% - 60px) / 3);
+  width: 100%;
   -webkit-transition: -webkit-box-shadow var(--transition-duration) var(--transition-timing-function);
   transition: -webkit-box-shadow var(--transition-duration) var(--transition-timing-function);
   transition: box-shadow var(--transition-duration) var(--transition-timing-function);

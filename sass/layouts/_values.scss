@@ -37,6 +37,10 @@
   line-height: calc(16 / 14);
   text-transform: uppercase;
   margin-bottom: 10px;
+  @media (max-width: 767px) {
+  text-align: center;
+  }
+
 }
 
 .values__text {

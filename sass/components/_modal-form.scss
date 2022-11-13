@@ -228,6 +228,9 @@ align-items: center;
 display: flex;
 cursor: pointer;
 padding-left: 12px;
+ @media (max-width: 1199px) {
+  padding-left: 10px;;
+  }
 }
 
 .checkbox-text span {
@@ -255,13 +258,18 @@ font-size: 14px;
 line-height: 1.71;
 color: var(--secondary-text-color);
 margin-left: 8px;
+ @media (max-width: 1199px) {
+  font-size: 12px;
+  }
 }
 
 .policy-link {
   font-size: 14px;
 line-height: 1.71;
   color: var(--accent-color);
-
+   @media (max-width: 1199px) {
+  font-size: 12px;
+  }
 }
 
 .modal-send-btn {

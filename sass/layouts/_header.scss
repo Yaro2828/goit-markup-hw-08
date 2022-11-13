@@ -172,7 +172,10 @@ line-height: calc(14/12);
         display: flex;
     flex-direction: column;
     height: 100%;
-    justify-content: space-between
+    justify-content: space-between;
+     @media (max-width: 479px) {
+  height: 96%;
+  }
   }
 
 .mobile-close-btn {background-color: transparent;

@@ -296,6 +296,11 @@ body {
   cursor: pointer;
   padding-left: 12px;
 }
+@media (max-width: 1199px) {
+  .checkbox-text {
+    padding-left: 10px;
+  }
+}
 
 .checkbox-text span {
   width: 16px;
@@ -329,11 +334,21 @@ body {
   color: var(--secondary-text-color);
   margin-left: 8px;
 }
+@media (max-width: 1199px) {
+  .policy-text {
+    font-size: 12px;
+  }
+}
 
 .policy-link {
   font-size: 14px;
   line-height: 1.71;
   color: var(--accent-color);
+}
+@media (max-width: 1199px) {
+  .policy-link {
+    font-size: 12px;
+  }
 }
 
 .modal-send-btn {
@@ -590,6 +605,11 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+@media (max-width: 480px) {
+  .menu-container {
+    height: 96%;
+  }
 }
 
 .mobile-close-btn {
@@ -1270,6 +1290,11 @@ body {
 @media screen and (min-width: 768px) {
   .portfolio-hero-item {
     width: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .portfolio-hero-item {
+    width: calc((100% - 60px) / 3);
   }
 }
 
